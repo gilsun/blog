@@ -4,6 +4,15 @@
 .body {
   font-family: "nanumsquare";
 }
+
+
+.modal{
+  margin-top: 30px;
+  padding: 20px;
+  background: #eee;
+}
+
+
 .black-nav {
   background: black;
   width: 100%;

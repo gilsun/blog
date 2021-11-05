@@ -7,6 +7,17 @@ function App() {
     "파이썬독학",
   ]);
   let [따봉, 따봉변경] = useState(0);
+  let [modal, modal변경] = useState(false);
+
+  const modalHandler = () => {
+    if(modal===true){
+      modal변경(false)
+    }
+    else{
+      modal변경(true)
+    }
+  };
+
   const addup = () => {
     따봉변경(따봉 + 1);
   };
@@ -31,6 +42,7 @@ function App() {
         <p>2월 17일 발행 </p>
         <hr />
       </div>
+
       <div className="list">
         <h4>{글제목[1]}</h4>
         <p>2월 17일 발행 </p>
@@ -41,7 +53,25 @@ function App() {
         <p>2월 17일 발행 </p>
         <hr />
       </div>
+      <button
+        onClick={modalHandler}
+      >
+        모달버튼
+      </button>
+      {modal && <Modal />}
+    
     </div>
   );
 }
+
+function Modal() {
+  return (
+    <div className="modal">
+      <h2>제목</h2>
+      <p>날짜</p>
+      <p>상세내용</p>
+    </div>
+  );
+}
+
 export default App;
