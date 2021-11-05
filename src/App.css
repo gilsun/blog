@@ -5,13 +5,38 @@
   font-family: "nanumsquare";
 }
 
-
-.modal{
+.modal {
   margin-top: 30px;
   padding: 20px;
   background: #eee;
 }
 
+.publish {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgb(241, 217, 217);
+}
+
+.publish input {
+  width: 80%;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.publish button {
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  border: none;
+  padding : 10px;
+  background: rgb(226, 159, 159);
+  font-size: 14px;
+}
 
 .black-nav {
   background: black;
